@@ -22,7 +22,7 @@ public class Car {
 
     public void setYear(int newYear){
         if(newYear > 0 ){
-            this.year = year;
+            this.year = newYear;
         } else {
             throw new RuntimeException("You have entered an negative year");
         }
@@ -58,4 +58,11 @@ public class Car {
         setYear(newYear);
     }
 
+    @Override
+    public String toString() {
+        return "Make: " + this.getMake() +
+                " Model: " + this.getModel() +
+                " Year: " + this.getYear() +
+                " Price: " + this.getPrice();
+    }
 }
