@@ -1,3 +1,5 @@
+package collections;
+
 import java.util.Comparator;
 
 public class Dog implements Comparable<Dog>{
@@ -24,7 +26,7 @@ public class Dog implements Comparable<Dog>{
         if(weight > 0){
             this.weight = weight;
         } else {
-            throw new RuntimeException("Dog weight should be positive");
+            throw new RuntimeException("collections.Dog weight should be positive");
         }
     }
 

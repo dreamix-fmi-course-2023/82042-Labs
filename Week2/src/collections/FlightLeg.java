@@ -1,3 +1,5 @@
+package collections;
+
 import java.time.LocalDate;
 
 public class FlightLeg {

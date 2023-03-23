@@ -1,3 +1,5 @@
+package collections;
+
 import java.util.*;
 
 public class Exercise {
@@ -69,9 +71,9 @@ public class Exercise {
         print(list);
 
         ArrayList<Dog> dogs = new ArrayList<>();
-        Dog dog1 = new Dog("Belgian Shepherd Dog", 25.2);
+        Dog dog1 = new Dog("Belgian Shepherd collections.Dog", 25.2);
         Dog dog2 = new Dog("Pincher", 5.3);
-        Dog dog3 = new Dog("Bulgarian Shepherd Dog", 50.0);
+        Dog dog3 = new Dog("Bulgarian Shepherd collections.Dog", 50.0);
 
         dogs.add(dog3);
         dogs.add(dog2);
