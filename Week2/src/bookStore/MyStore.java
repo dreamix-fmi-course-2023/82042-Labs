@@ -1,14 +1,16 @@
 package bookStore;
 
 import java.time.LocalDate;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class MyStore implements Store{
     private Set<Book> books;
+
+    public MyStore(){
+        books = new HashSet<Book>();
+    }
     @Override
     public boolean add(Book o) {
         boolean result = true;
@@ -67,16 +69,21 @@ public class MyStore implements Store{
 
     @Override
     public Map<String, List<Book>> getAllBooksGroupByAuthor() {
-        return null;
+        return books.stream()
+                    .collect(Collectors.groupingBy(Book::getAuthor));
+
     }
 
     @Override
     public Map<String, List<Book>> getAllBooksGroupByPublisher() {
-        return null;
+        return books.stream()
+                    .collect(Collectors.groupingBy(Book::getPublisher));
     }
 
     @Override
     public List<Book> getAllBooksFilterBy(Predicate<Book> bookPredicate) {
-        return null;
+        return books.stream()
+                    .filter(bookPredicate)
+                    .collect(Collectors.toList());
     }
 }
