@@ -4,16 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16e2b6c6-918d-4d5d-8c74-3237593ed074" name="Changes" comment="" />
+    <list default="true" id="49341d29-9243-4512-8296-69b930cebfdc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/books/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/books/repository/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/books/repository/BookRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/books/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/books/service/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wdwj/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wdwj/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wdwj/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wdwj/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wdwj/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wdwj/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wdwj/src/main/java/bg/fmi/course/wdwj/WdwjApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wdwj/src/main/java/bg/fmi/course/wdwj/model/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wdwj/src/main/java/bg/fmi/course/wdwj/repository/BookRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wdwj/src/main/java/bg/fmi/course/wdwj/repository/BookRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wdwj/src/main/java/bg/fmi/course/wdwj/service/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wdwj/src/main/java/bg/fmi/course/wdwj/service/BookServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wdwj/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wdwj/src/test/java/bg/fmi/course/wdwj/WdwjApplicationTests.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2NQFNL48krkeBIznT3GyeQchwpt" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2NVLNqTQwXa2LZvJL9uLXWUnn4S" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -22,31 +67,37 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Milena/Desktop/IVkursIIsem/82042-Labs/Week4/wdwj"
+    "last_opened_file_path": "C:/Users/Milena/Desktop/IVkursIIsem/82042-Labs/Week2"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="WdwjApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bg.fmi.course.books.WdwjApplication" />
       <module name="Week4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bg.fmi.course.books.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.WdwjApplication" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="16e2b6c6-918d-4d5d-8c74-3237593ed074" name="Changes" comment="" />
-      <created>1679588359662</created>
+      <changelist id="49341d29-9243-4512-8296-69b930cebfdc" name="Changes" comment="" />
+      <created>1679744269954</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1679588359662</updated>
+      <updated>1679744269954</updated>
     </task>
     <servers />
   </component>

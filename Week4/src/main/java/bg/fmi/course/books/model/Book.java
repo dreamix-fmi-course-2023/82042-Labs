@@ -1,4 +1,4 @@
-package bg.fmi.course.wdwj.model;
+package bg.fmi.course.books.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -31,11 +31,12 @@ public class Book {
         return this.publishedYear;
     }
 
-    public String getIsbn(){
+    public String getIsbn() {
         return this.isbn;
     }
+
     public void setTitle(String newTitle) {
-        if(newTitle != null){
+        if (newTitle != null) {
             this.title = newTitle;
         } else {
             throw new RuntimeException("Title should be not empty!");
@@ -43,7 +44,7 @@ public class Book {
     }
 
     public void setAuthor(String newAuthor) {
-        if(newAuthor != null){
+        if (newAuthor != null) {
             this.author = newAuthor;
         } else {
             throw new RuntimeException("Author should be not empty!");
@@ -51,7 +52,7 @@ public class Book {
     }
 
     public void setPrice(BigDecimal newPrice) {
-        if(newPrice != null){
+        if (newPrice != null) {
             this.price = newPrice;
         } else {
             throw new RuntimeException("Price should be not empty");
@@ -59,42 +60,53 @@ public class Book {
     }
 
     public void setPublisher(String newPublisher) {
-        if(newPublisher != null){
-            this.publisher= newPublisher;
+        if (newPublisher != null) {
+            this.publisher = newPublisher;
         } else {
             throw new RuntimeException("Publisher should be not empty!");
         }
     }
 
     public void setPublishedYear(LocalDate newPublishedYear) {
-        if(newPublishedYear.isBefore(LocalDate.now())){
+        if (newPublishedYear.isBefore(LocalDate.now())) {
             this.publishedYear = newPublishedYear;
         } else {
             throw new RuntimeException("Published date should be before today!");
         }
     }
 
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
+    public void setIsbn(String newIsbn){
+        if(newIsbn.equals("")){
+            throw new RuntimeException("Isbn should be not empty!");
+        } else {
+            this.isbn = newIsbn;
+        }
     }
 
-    public Book() {}
-
-    public Book(String newTitle, String newAuthor, BigDecimal newPrice, String newPublisher, LocalDate newPublishedYear) {
+    public Book(String newTitle, String newAuthor, BigDecimal newPrice, String newPublisher, LocalDate newPublishedYear, String newIsbn) {
         setAuthor(newAuthor);
         setTitle(newTitle);
         setPrice(newPrice);
         setPublisher(newPublisher);
         setPrice(newPrice);
         setPublishedYear(newPublishedYear);
+        setIsbn(newIsbn);
     }
+
+    public Book() {};
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Book book = (Book) o;
-        return title.equals(book.title) && author.equals(book.author) && publishedYear.equals(book.publishedYear);
+        return title.equals(book.title) &&
+                author.equals(book.author) &&
+                publishedYear.equals(book.publishedYear);
     }
 
     @Override
@@ -103,7 +115,6 @@ public class Book {
                 "\nTitle: " + this.getTitle() +
                 "\nPrice: " + this.getPrice() +
                 "\nPublisher: " + this.getPublisher() +
-                "\nPublished year: " + this.getPublishedYear() +
-                "\nIsbn: " + this.getIsbn();
+                "\nPublished year: " + this.getPublishedYear();
     }
 }

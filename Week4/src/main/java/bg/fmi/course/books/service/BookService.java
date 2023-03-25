@@ -1,7 +1,6 @@
-package bg.fmi.course.wdwj.service;
+package bg.fmi.course.books.service;
 
-
-import bg.fmi.course.wdwj.model.Book;
+import bg.fmi.course.books.model.Book;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -12,7 +11,6 @@ public interface BookService {
 
     /**
      * Add book to the store
-     *
      * @param o is the book which we want to add
      * @return true is the book is add successful and false is the book is already exists
      */
@@ -20,22 +18,19 @@ public interface BookService {
 
     /**
      * Remove specific book from the store
-     *
      * @param o is the book which we want to remove
      */
     void remove(Book o);
 
     /**
-     * Get all books by Author
-     *
+     *  Get all books by Author
      * @param author
      * @return
      */
     List<Book> getAllBooksByAuthor(String author);
 
     /**
-     * Get all books publish after specific year
-     *
+     * Get all books publish after specific date
      * @param from
      * @return
      */
@@ -43,7 +38,6 @@ public interface BookService {
 
     /**
      * Return all books between two dates
-     *
      * @param from
      * @param to
      * @return
@@ -57,7 +51,6 @@ public interface BookService {
 
     /**
      * Return all books grouped by author
-     *
      * @return
      */
     Map<String, List<Book>> getAllBooksGroupByAuthor();
@@ -65,14 +58,12 @@ public interface BookService {
 
     /**
      * Return all books grouped by publisher
-     *
      * @return
      */
     Map<String, List<Book>> getAllBooksGroupByPublisher();
 
     /**
      * Filter books by given filter
-     *
      * @param bookPredicate
      * @return
      */

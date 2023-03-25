@@ -1,10 +1,9 @@
-package bg.fmi.course.wdwj.service;
+package bg.fmi.course.books.service;
 
-import bg.fmi.course.wdwj.model.Book;
-import bg.fmi.course.wdwj.repository.BookRepository;
+import bg.fmi.course.books.model.Book;
+import bg.fmi.course.books.repository.BookRepository;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Predicate;
@@ -27,46 +26,43 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public void remove(Book o) {
+    public void remove(Book book) {
 
+        this.bookRepository.delete(book);
     }
 
     @Override
     public List<Book> getAllBooksByAuthor(String author) {
-        if (author == null || author.isBlank()) {
-            return new ArrayList<>();
-        }
-        return null;
+        return bookRepository.getByAuthor(author);
     }
 
     @Override
     public List<Book> getAllBooksPublishedAfter(LocalDate from) {
-        return null;
+        return bookRepository.getAllBooksPublishedAfter(from);
     }
 
     @Override
     public List<Book> getAllBooksBetween(LocalDate from, LocalDate to) {
-        return null;
+        return bookRepository.getAllBooksBetween(from, to);
     }
 
     @Override
     public void clear() {
-
+        bookRepository.clear();
     }
 
     @Override
     public Map<String, List<Book>> getAllBooksGroupByAuthor() {
-
-        return null;
+        return bookRepository.getAllBooksGroupByAuthor();
     }
 
     @Override
     public Map<String, List<Book>> getAllBooksGroupByPublisher() {
-        return null;
+        return bookRepository.getAllBooksGroupByPublisher();
     }
 
     @Override
     public List<Book> getAllBooksFilterBy(Predicate<Book> bookPredicate) {
-        return null;
+        return bookRepository.getAllBooksFilterBy(bookPredicate);
     }
 }

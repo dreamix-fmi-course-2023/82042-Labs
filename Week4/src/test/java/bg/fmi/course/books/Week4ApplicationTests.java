@@ -1,10 +1,10 @@
-package bg.fmi.course.wdwj;
+package bg.fmi.course.books;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WdwjApplicationTests {
+class Week4ApplicationTests {
 
 	@Test
 	void contextLoads() {
