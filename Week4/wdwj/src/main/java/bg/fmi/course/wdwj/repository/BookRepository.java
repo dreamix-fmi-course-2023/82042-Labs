@@ -10,6 +10,5 @@ public interface BookRepository {
 
     List<Book> getBooks();
 
-
     Book getByIsbn(String isbn);
 }

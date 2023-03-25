@@ -82,10 +82,19 @@ public class Book {
 
     public Book(String newTitle, String newAuthor, BigDecimal newPrice, String newPublisher, LocalDate newPublishedYear) {
         setAuthor(newAuthor);
+        setTitle(newTitle);
         setPrice(newPrice);
         setPublisher(newPublisher);
         setPrice(newPrice);
         setPublishedYear(newPublishedYear);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return title.equals(book.title) && author.equals(book.author) && publishedYear.equals(book.publishedYear);
     }
 
     @Override

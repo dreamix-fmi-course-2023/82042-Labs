@@ -72,16 +72,25 @@ public class Book {
 
     public Book(String newTitle, String newAuthor, BigDecimal newPrice, String newPublisher, LocalDate newPublishedYear) {
         setAuthor(newAuthor);
+        setTitle(newTitle);
         setPrice(newPrice);
         setPublisher(newPublisher);
         setPrice(newPrice);
         setPublishedYear(newPublishedYear);
     }
 
-    public boolean isTheSameType(Book other){
-        return (this.getAuthor() == other.getAuthor() &&
-                this.getTitle() == other.getTitle() &&
-                this.getPublishedYear() == other.getPublishedYear());
+    @Override
+    public boolean equals(Object o){
+       if(this == o) {
+           return true;
+       }
+       if(o == null || getClass() != o.getClass()) {
+           return false;
+       }
+       Book book = (Book) o;
+       return title.equals(book.title) &&
+               author.equals(book.author) &&
+               publishedYear.equals(book.publishedYear);
     }
 
     @Override

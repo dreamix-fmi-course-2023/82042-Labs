@@ -21,7 +21,9 @@ public class WdwjApplication implements CommandLineRunner {
 		book.setAuthor("ASD");
 		book.setIsbn("ISBNASD");
 
-		bookService.add(book)
+		bookService.add(book);
+
+		System.out.println(bookService);
 
 	}
 }

@@ -2,7 +2,6 @@ package bg.fmi.course.wdwj.service;
 
 import bg.fmi.course.wdwj.model.Book;
 import bg.fmi.course.wdwj.repository.BookRepository;
-import org.springframework.util.StringUtils;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -10,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Predicate;
 
-public class BookServiceImpl implements BookService{
+public class BookServiceImpl implements BookService {
     private final BookRepository bookRepository;
 
     public BookServiceImpl(BookRepository bookRepository) {
@@ -20,7 +19,7 @@ public class BookServiceImpl implements BookService{
     @Override
     public boolean add(Book book) {
         Book bookByIsbn = bookRepository.getByIsbn(book.getIsbn());
-        if(bookByIsbn != null){
+        if (bookByIsbn != null) {
             return false;
         }
         bookRepository.add(book);
@@ -34,7 +33,7 @@ public class BookServiceImpl implements BookService{
 
     @Override
     public List<Book> getAllBooksByAuthor(String author) {
-        if(author == null || author.isBlank()) {
+        if (author == null || author.isBlank()) {
             return new ArrayList<>();
         }
         return null;
@@ -58,7 +57,7 @@ public class BookServiceImpl implements BookService{
     @Override
     public Map<String, List<Book>> getAllBooksGroupByAuthor() {
 
-
+        return null;
     }
 
     @Override
