@@ -1,3 +1,7 @@
+package bg.fmi.course.cars.repository;
+
+import bg.fmi.course.cars.model.Car;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -26,7 +30,7 @@ public class CarRepository {
         this.cars.add(car);
     }
 
-    public void removeCar(Car car) {
+    void removeCar(Car car) {
         this.cars.remove(car);
     }
 }
