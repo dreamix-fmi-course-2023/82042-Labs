@@ -4,17 +4,17 @@ import bg.fmi.course.cars.model.Invoice;
 
 import java.util.ArrayList;
 import java.util.List;
-public class InvoiceRepository {
+public class InvoiceRepositoryImpl implements InvoiceRepository {
     private List<Invoice> invoiceRepository;
 
-    public InvoiceRepository(){
+    public InvoiceRepositoryImpl(){
         invoiceRepository = new ArrayList<Invoice>();
     }
-
+    @Override
     public void addInvoice(Invoice invoice){
         invoiceRepository.add(invoice);
     }
-
+    @Override
     public List<Invoice> getInvoiceHistory(){
         return invoiceRepository;
     }

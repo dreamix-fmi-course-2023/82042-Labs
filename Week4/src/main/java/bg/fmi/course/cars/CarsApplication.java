@@ -1,4 +1,4 @@
-package bg.fmi.course.books;
+package bg.fmi.course.cars;
 
 import bg.fmi.course.books.model.Book;
 import bg.fmi.course.books.repository.BookRepository;
@@ -9,11 +9,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.math.BigDecimal;
-import java.time.LocalDate;
-
 @SpringBootApplication
-public class WdwjApplication implements CommandLineRunner {
+public class CarsApplication implements CommandLineRunner {
     private BookService bookService;
 
     @Override
@@ -33,6 +30,6 @@ public class WdwjApplication implements CommandLineRunner {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(WdwjApplication.class, args);
+        SpringApplication.run(CarsApplication.class, args);
     }
 }

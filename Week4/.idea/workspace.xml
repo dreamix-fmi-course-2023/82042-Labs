@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49341d29-9243-4512-8296-69b930cebfdc" name="Changes" comment="" />
+    <list default="true" id="49341d29-9243-4512-8296-69b930cebfdc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/cars/repository/InvoiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/cars/service/CarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/cars/service/CarServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/cars/service/InvoiceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/cars/service/InvoiceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week3/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week3/src/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week3/src/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week3/src/CarRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week3/src/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week3/src/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week3/src/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week3/src/Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week3/src/InvoiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week3/src/InvoiceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/fmi/course/books/WdwjApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/books/BooksApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/fmi/course/cars/CarsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/cars/CarsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/fmi/course/cars/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/cars/model/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/fmi/course/cars/model/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/cars/model/Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/fmi/course/cars/repository/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/cars/repository/CarRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/fmi/course/cars/repository/CarRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/cars/repository/CarRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/fmi/course/cars/repository/InvoiceRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/cars/repository/InvoiceRepositoryImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,9 +68,17 @@
     "last_opened_file_path": "C:/Users/Milena/Desktop/IVkursIIsem/82042-Labs/Week3"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Milena\Desktop\IVkursIIsem\82042-Labs\Week4\src\main\java\bg\fmi\course\cars" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="bg.fmi.course.cars" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="WdwjApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bg.fmi.course.books.WdwjApplication" />
+    <configuration name="BooksApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bg.fmi.course.books.BooksApplication" />
       <module name="Week4" />
       <extension name="coverage">
         <pattern>
@@ -65,7 +92,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WdwjApplication" />
+        <item itemvalue="Application.BooksApplication" />
       </list>
     </recent_temporary>
   </component>

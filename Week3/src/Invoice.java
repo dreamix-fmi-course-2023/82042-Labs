@@ -76,7 +76,7 @@ public class Invoice {
         setCustomerName(customerName);
     }
 
-    double getTotalPrice(){
+   public double getTotalPrice(){
         return getSalesPrice() * getTaxRate() + getSalesPrice();
     }
 

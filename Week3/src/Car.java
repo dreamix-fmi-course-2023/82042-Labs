@@ -52,7 +52,7 @@ public class Car {
         return this.price;
     }
 
-    Car(String newMake, String newModel, int newYear, double newPrice) {
+    public Car(String newMake, String newModel, int newYear, double newPrice) {
         setMake(newMake);
         setMode(newModel);
         setPrice(newPrice);

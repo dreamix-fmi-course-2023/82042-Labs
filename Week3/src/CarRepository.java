@@ -4,7 +4,7 @@ import java.util.stream.Collectors;
 public class CarRepository {
     private List<Car> cars;
 
-    CarRepository() {
+    public CarRepository() {
         this.cars = new ArrayList<>();
     }
 
