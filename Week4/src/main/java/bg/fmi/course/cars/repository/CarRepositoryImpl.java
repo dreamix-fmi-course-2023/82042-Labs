@@ -8,18 +8,23 @@ import java.util.stream.Collectors;
 
 @Service
 public class CarRepositoryImpl implements CarRepository {
-    private List<Car> cars;
+    private Map<String, Car> db;
 
     public CarRepositoryImpl() {
-        this.cars = new ArrayList<>();
+        this.db = new HashMap<>();
     }
+
     @Override
     public List<Car> getAllCars() {
-        return this.cars;
+        return db.values()
+                .stream()
+                .toList();
     }
+
     @Override
     public List<Car> searchCars(String make, String model, Integer year, Double price) {
-        return this.cars.stream()
+        return db.values()
+                .stream()
                 .filter(car ->
                         car.getModel().equals(model) &&
                                 car.getMake().equals(make) &&
@@ -27,12 +32,14 @@ public class CarRepositoryImpl implements CarRepository {
                                 car.getPrice() == price
                 ).collect(Collectors.toList());
     }
+
     @Override
     public void addCar(Car car) {
-        this.cars.add(car);
+        db.put(car.getID(), car);
     }
+
     @Override
     public void removeCar(Car car) {
-        this.cars.remove(car);
+        db.remove(car.getID());
     }
 }

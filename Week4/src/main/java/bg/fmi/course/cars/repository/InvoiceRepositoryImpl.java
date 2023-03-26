@@ -3,20 +3,25 @@ package bg.fmi.course.cars.repository;
 import bg.fmi.course.cars.model.Invoice;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 public class InvoiceRepositoryImpl implements InvoiceRepository {
-    private List<Invoice> invoiceRepository;
+    private Map<String, Invoice> db;
 
     public InvoiceRepositoryImpl(){
-        invoiceRepository = new ArrayList<Invoice>();
+        db = new HashMap<>();
     }
     @Override
     public void addInvoice(Invoice invoice){
-        invoiceRepository.add(invoice);
+        db.put(invoice.getId(), invoice);
     }
     @Override
     public List<Invoice> getInvoiceHistory(){
-        return invoiceRepository;
+        return db.values()
+                .stream()
+                .toList();
     }
 
 }

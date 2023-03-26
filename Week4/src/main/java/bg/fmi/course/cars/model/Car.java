@@ -1,10 +1,19 @@
 package bg.fmi.course.cars.model;
 
 public class Car {
+    private String ID;
     private String make;
     private String model;
     private int year;
     private double price;
+
+    public void setID(String ID){
+        if(ID.equals("")){
+            throw new NullPointerException("Car ID should be not empty!");
+        } else {
+            this.ID = ID;
+        }
+    }
 
     public void setMake(String newMake) {
         if (newMake != null) {
@@ -37,7 +46,7 @@ public class Car {
             throw new RuntimeException("The price should be positive");
         }
     }
-
+    public String getID() {return  this.ID; }
     public String getModel() {
         return this.model;
     }
@@ -54,7 +63,8 @@ public class Car {
         return this.price;
     }
 
-    Car(String newMake, String newModel, int newYear, double newPrice) {
+    Car(String ID, String newMake, String newModel, int newYear, double newPrice) {
+        setID(ID);
         setMake(newMake);
         setMode(newModel);
         setPrice(newPrice);
@@ -63,7 +73,8 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Make: " + this.getMake() +
+        return "ID: " + this.getID() +
+                " Make: " + this.getMake() +
                 " Model: " + this.getModel() +
                 " Year: " + this.getYear() +
                 " Price: " + this.getPrice();

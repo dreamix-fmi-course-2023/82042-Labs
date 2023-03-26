@@ -3,11 +3,16 @@ package bg.fmi.course.cars.model;
 import java.util.Date;
 
 public class Invoice {
+    private String id;
     private String customerName;
     private Date purchaseDate;
     private Car car;
     private double salesPrice;
     private double taxRate;
+
+    public String getId() {
+        return this.id;
+    }
 
     public String getCustomerName() {
         return this.customerName;
@@ -29,8 +34,16 @@ public class Invoice {
         return this.taxRate;
     }
 
+    public void setId(String id){
+        if(id.equals("")){
+            throw new NullPointerException("Id should be not empty");
+        } else {
+            this.id = id;
+        }
+    }
+
     public void setCustomerName(String customerName) {
-        if(customerName.equals("")){
+        if (customerName.equals("")) {
             throw new RuntimeException("Customer name should not be empty!");
         } else {
             this.customerName = customerName;
@@ -38,7 +51,7 @@ public class Invoice {
     }
 
     public void setPurchaseDate(Date purchaseDate) {
-        if(purchaseDate.equals(null)){
+        if (purchaseDate.equals(null)) {
             throw new RuntimeException("Purchase date should not be empty!");
         } else {
             this.purchaseDate = purchaseDate;
@@ -50,7 +63,7 @@ public class Invoice {
     }
 
     public void setSalesPrice(double salesPrice) {
-        if(salesPrice < 0) {
+        if (salesPrice < 0) {
             throw new RuntimeException("Price should be positive");
         } else {
             this.salesPrice = salesPrice;
@@ -58,14 +71,15 @@ public class Invoice {
     }
 
     public void setTaxRate(double taxRate) {
-        if(taxRate < 0 ){
+        if (taxRate < 0) {
             throw new RuntimeException("Tax rate should be positive!");
         } else {
             this.taxRate = taxRate;
         }
     }
 
-    public Invoice(String customerName, Date purchaseDate, Car car, double salesPrice, double taxRate) {
+    public Invoice(String id, String customerName, Date purchaseDate, Car car, double salesPrice, double taxRate) {
+        setId(id);
         setCustomerName(customerName);
         setPurchaseDate(purchaseDate);
         setCar(car);
@@ -73,18 +87,19 @@ public class Invoice {
         setTaxRate(taxRate);
     }
 
-    public Invoice(String customerName, Car car){
+    public Invoice(String customerName, Car car) {
         setCar(car);
         setCustomerName(customerName);
     }
 
-    public double getTotalPrice(){
+    public double getTotalPrice() {
         return getSalesPrice() * getTaxRate() + getSalesPrice();
     }
 
     @Override
     public String toString() {
-        return "\nCustomer name: " + getCustomerName() +
+        return  "\nInvoice ID: " + getId() +
+                "\nCustomer name: " + getCustomerName() +
                 "\nPurchase date: " + getPurchaseDate() +
                 "\nCar: \n\t" + getCar() +
                 "\nSales price: " + getSalesPrice() +
