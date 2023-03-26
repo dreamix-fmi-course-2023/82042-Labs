@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49341d29-9243-4512-8296-69b930cebfdc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/books/model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/books/repository/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/books/repository/BookRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/books/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/fmi/course/books/service/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wdwj/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wdwj/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wdwj/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wdwj/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wdwj/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wdwj/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wdwj/src/main/java/bg/fmi/course/wdwj/WdwjApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wdwj/src/main/java/bg/fmi/course/wdwj/model/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wdwj/src/main/java/bg/fmi/course/wdwj/repository/BookRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wdwj/src/main/java/bg/fmi/course/wdwj/repository/BookRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wdwj/src/main/java/bg/fmi/course/wdwj/service/BookService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wdwj/src/main/java/bg/fmi/course/wdwj/service/BookServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wdwj/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wdwj/src/test/java/bg/fmi/course/wdwj/WdwjApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="49341d29-9243-4512-8296-69b930cebfdc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +46,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Milena/Desktop/IVkursIIsem/82042-Labs/Week2"
+    "last_opened_file_path": "C:/Users/Milena/Desktop/IVkursIIsem/82042-Labs/Week3"
   }
 }]]></component>
   <component name="RunManager">
